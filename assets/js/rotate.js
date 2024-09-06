@@ -1,12 +1,12 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     let angle = 0;
-//     const image = document.getElementById('rotating-image');
+window.onload = function() {
+    const image = document.querySelector('.profile-image');
+    
+    let angle = 0;
+    function rotateImage() {
+        angle = (angle + 1) % 360; // Increment the angle
+        image.style.transform = `rotate(${angle}deg)`; // Apply the rotation
+    }
 
-//     function rotateImage() {
-//         angle += 1; // Increase the rotation angle
-//         image.style.transform = `rotate(${angle}deg)`;
-//         requestAnimationFrame(rotateImage); // Continuously call rotateImage
-//     }
-
-//     rotateImage(); // Start rotating the image
-// });
+    // Rotate every 10 milliseconds for smooth rotation
+    setInterval(rotateImage, 20);
+};

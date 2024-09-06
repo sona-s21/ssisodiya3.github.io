@@ -104,3 +104,12 @@ footer {
 footer p {
     font-size: 1rem;
 }
+
+.profile-image {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: auto;
+    border-radius: 50%; /* Makes the image round */
+    
+}

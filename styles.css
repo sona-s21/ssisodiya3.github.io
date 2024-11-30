@@ -114,4 +114,9 @@ footer p {
     
 }
 
-
+.project-image {
+    float: right;        /* Aligns the image to the right */
+    margin-top: -20px;    /* Moves the image up (negative value moves it up) */
+    margin-left: 20px;    /* Adds space between the image and the list */
+    width: 200px;         /* You can adjust the size of the image */
+}
